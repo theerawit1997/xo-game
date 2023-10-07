@@ -106,9 +106,18 @@ h1 {
 .reset-button {
   margin-top: 50px;
   padding: 20px;
-  background-color: #26b908;
+  background-color: #f0ce0b;
   border-style: double;
-  color: white;
+  display: inline-block;
+  color: rgb(0, 0, 0);
   width: 100%;
   font-size: 1.5em;
+  transition-duration: 0.4s;
+  transition-delay: 0.2s; /* Delay added here */
+}
+
+.reset-button:hover {
+  background-color: #07f513; /* New color on hover */
+  color: rgb(255, 255, 255);
+  transition-delay: 0s; /* Reset delay on hover */
 }
