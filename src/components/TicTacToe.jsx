@@ -13,7 +13,7 @@ function TicTacToe() {
       return;
     }
 
-    // console.log(index);
+    console.log(index);
     const newTiles = [...tiles];
     newTiles[index] = playerTurn;
     setTiles(newTiles);
@@ -27,7 +27,11 @@ function TicTacToe() {
   return (
     <>
       <h1>XO Game</h1>
-      <Board tiles={tiles} onTileClick={handleTileClick} />
+      <Board
+        playerTurn={playerTurn}
+        tiles={tiles}
+        onTileClick={handleTileClick}
+      />
     </>
   );
 }
