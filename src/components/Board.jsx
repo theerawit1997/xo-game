@@ -1,8 +1,20 @@
+import Strike from "./Strike";
+import Tile from "./Tile";
+
 function Board() {
   return (
-    <>
-      <h4>Board Game XO</h4>
-    </>
+    <div className="board">
+      <Tile />
+      <Tile />
+      <Tile />
+      <Tile />
+      <Tile />
+      <Tile />
+      <Tile />
+      <Tile />
+      <Tile />
+      <Strike />
+    </div>
   );
 }
 
