@@ -7,6 +7,7 @@ const PlayerO = "O";
 function TicTacToe() {
   const [tiles, setTiles] = useState(Array(9).fill(null));
   const [playerTurn, setPlayerTurn] = useState(PlayerX);
+  const [strikeClass, setstrikeClass] = useState();
 
   const handleTileClick = (index) => {
     if (tiles[index] !== null) {
@@ -31,6 +32,7 @@ function TicTacToe() {
         playerTurn={playerTurn}
         tiles={tiles}
         onTileClick={handleTileClick}
+        strikeClass={strikeClass}
       />
     </>
   );
